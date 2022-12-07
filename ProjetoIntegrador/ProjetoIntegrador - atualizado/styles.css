@@ -1,0 +1,285 @@
+html {
+  height: 100%;
+}
+
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.barraNav {
+  background-color: #040473;
+}
+
+.gradient-navbar {
+  background-image: linear-gradient(#42427d, #040473);
+}
+
+main {
+  background-image: linear-gradient(#040473, #2c2c7f);
+}
+
+.circulo {
+  background-image: linear-gradient(90deg, #f99b5d, #cc6a29);
+}
+
+.texto {
+  color: white;
+}
+
+
+.btnComoAjudar {
+  background-color: transparent;
+  border: 0;
+  color: #f99b5d;
+  padding: 0;
+  margin: 0;
+}
+
+/* hover effects */
+.padrao, .btnComoAjudar {
+  position: relative;
+}
+
+.padrao::after, .btnComoAjudar::after {
+  content: '';
+  opacity: 0;
+  transition: all 0.3s;
+  height: 2px;
+  width: 100%;
+  background-color: #f99b5d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.padrao:hover::after, .btnComoAjudar:hover::after {
+  opacity: 1;
+}
+
+.btnDoe, .btnSaibaMais, .btnForm {
+  background-color: #f99b5d;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.btnDoe:hover, .btnDoe:focus, .btnDoe:active, .btnSaibaMais:hover, .btnSaibaMais:focus, .btnSaibaMais:active,
+.btnForm:hover, .btnForm:focus, .btnForm:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.comeco {
+  min-height: 100vh;
+  background-color: #040473;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+.criancas {
+  width: 200px;
+  border-radius: 40%;
+  position: relative;
+  top: 40%;
+  left: 40%;
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1100px;
+  margin:0 auto;
+  padding:0 2%;
+}
+
+.rodape, .rodapeDoeAgora {
+  background-color: #7474ac;
+}
+
+.rodapeDoeAgora {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.25rem;
+
+}
+
+.texto-rodape {
+  padding-left: 30%;
+}
+
+.texto {
+  margin-top: 20px;
+  z-index: 5;
+}
+
+.texto h1 {
+  font-size: 1.875rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.texto p{
+  margin: 20px 0;
+  font-size: 1.25rem;
+  text-align: justify;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dados {
+  color: white;
+  font-size: 1.25rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario {
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.btnSaibaMais {
+  border: 0;
+  color: white;
+}
+
+.circulo {
+  position: absolute;
+  position: fixed;
+  right: 0px;
+  width: 550px;
+  height: 600px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #f99b5d;
+}
+
+.social-media {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+
+.whatsapp {
+  right: 25px;
+}
+
+.social-media img{
+  display: block;
+  width:  65px;
+  margin-bottom:40px;
+}
+
+.carousel {
+  height: 30rem;
+  display: flex;
+  max-width: 50%;
+  margin-left: 7.3%;
+  margin-right: auto;
+  background-size: auto;
+}
+
+/* o projeto */
+.impactos {
+  position: relative;
+  width: 500px;
+  right: 110px;
+  bottom: 150px;
+}
+
+.acoes {
+  position: relative;
+  width: 500px;
+  right: 350px;
+  bottom: 160px;
+ 
+}
+
+.meses {
+  font-size: 1.25rem;
+  text-align: justify;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style-image: url(star-icon.svg);
+  position: relative;
+  bottom: 320px;
+}
+
+.voluntarias {
+  position: relative;
+  width: 500px;
+  bottom: 490px;
+  right: 130px;
+}
+
+.meninas{
+  position: relative;
+  width: 600px;
+  bottom: 100px;
+  right: 520px;
+  border-radius: 20%;
+}
+
+.estatisticas{
+  position:relative;
+  width: 40%;
+  margin-left: 10rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+  .estatisticas {
+    margin-left: 15rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .estatisticas {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel {
+    margin: auto;
+    height: 20rem;
+    max-width: 60%;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    margin: auto;
+    height: 15rem;
+    max-width: 90%;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .texto-rodape {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .texto-rodape {
+    padding-left: 36%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .texto-rodape {
+    padding-left: 20%;
+  }
+}
+
+.link{
+  color: #cc6a29;
+}
